@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+::-moz-selection {
+  background-color: #008EA8;
+  color: #ffffff;
+}
+::selection {
+  background-color: #008EA8;
+  color: #ffffff;
+}
+@-ms-viewport {
+  width: auto !important;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #222222;
+  background-color: #fefefe;
+  -webkit-text-size-adjust: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #008EA8;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a,
+a:link,
+a:active {
+  color: #008EA8;
+}
+a:visited {
+  color: #00697d;
+}
+a:hover {
+  text-decoration: none;
+}
+.text-primary {
+  color: #008EA8;
+}
+.text-secondary {
+  color: #FF7C00;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-bigger,
+.motto {
+  font-size: 1.2rem;
+}
+.text-italic,
+.motto {
+  font-style: italic;
+}
+.text-thin,
+.text-300,
+.motto {
+  font-weight: 300;
+}
+.content {
+  background-color: #ffffff;
+  max-width: 800px;
+  padding: 0.5rem 1rem 0;
+}
+.avatar {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.footer {
+  font-size: 0.8rem;
+}
+@media (prefers-color-scheme: dark) {
+  body,
+  .content {
+    color: #ffffff;
+    background: #333333;
+  }
+  a,
+  a:link,
+  a:active {
+    color: #008EA8;
+  }
+  a:visited {
+    color: #00697d;
+  }
+}

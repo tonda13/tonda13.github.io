@@ -1,0 +1,161 @@
+// out: ../css/main.css
+
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+@i: !important;
+
+@default-font-family:
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Linux, KDE
+  Oxygen-Sans,
+  // Linux, Ubuntu
+  Ubuntu,
+  // Linux, Gnome
+  Cantarell,
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// @color-primary: #007287;
+@color-primary: #008EA8; //lighter
+@color-primary-darken: darken(@color-primary, 8.5%); // #00697d
+@color-secondary: #FF7C00;
+@white: #ffffff;
+@almost-white: #fefefe;
+@black: #000000;
+
+@gray-base:        @black;
+@gray-darker:      lighten(@gray-base, 13.5%); // #222
+@gray-dark:        lighten(@gray-base, 20%);   // #333
+@gray:             lighten(@gray-base, 33.5%); // #555
+@gray-light:       lighten(@gray-base, 46.7%); // #777
+@gray-lighter:     lighten(@gray-base, 93.5%); // #eee
+
+@font-size-base: 1rem;
+
+::-moz-selection {
+    background-color: @color-primary;
+    color: @white;
+}
+::selection {
+    background-color: @color-primary;
+    color: @white;
+}
+
+@-ms-viewport{
+    width: auto @i;
+}
+
+body {
+    margin: 0;
+    font-family: @default-font-family;
+    font-size: @font-size-base;
+    font-weight: 400;
+    line-height: 1.4;
+    color: @gray-darker;
+    background-color: @almost-white;
+    // Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+    -webkit-text-size-adjust: 100%;
+    // Change the default tap highlight to be completely transparent in iOS.
+    // -webkit-tap-highlight-color: rgba($black, 0);
+}
+
+h1, h2, h3, h4 {
+    color: @color-primary;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+    &, &:link, &:active {
+        color: @color-primary;
+    }
+
+    &:visited {
+        color: @color-primary-darken;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.text-primary { color: @color-primary; }
+.text-secondary { color: @color-secondary; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-bigger { font-size: 1.2rem; }
+.text-italic { font-style: italic; }
+.text-thin,
+.text-300 {
+    font-weight: 300;
+}
+
+.content {
+    background-color: @white;
+    max-width: 800px;
+    padding: 0.5rem 1rem 0;
+}
+
+.motto {
+    &:extend(.text-bigger);
+    &:extend(.text-italic);
+    &:extend(.text-thin);
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.footer {
+    font-size: 0.8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body, .content {
+        color: @white;
+        background: @gray-dark;
+    }
+}
