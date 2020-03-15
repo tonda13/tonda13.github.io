@@ -93,6 +93,11 @@ a:hover {
   max-width: 800px;
   padding: 0.5rem 1rem 0;
 }
+.image {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
 .avatar {
   border-radius: 50%;
   height: 200px;
@@ -106,13 +111,5 @@ a:hover {
   .content {
     color: #ffffff;
     background: #333333;
-  }
-  a,
-  a:link,
-  a:active {
-    color: #008EA8;
-  }
-  a:visited {
-    color: #00697d;
   }
 }
