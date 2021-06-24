@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
 ::-moz-selection {
   background-color: #008EA8;
   color: #ffffff;
@@ -94,9 +94,8 @@ a:hover {
   padding: 0.5rem 1rem 0;
 }
 .image {
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  float: right;
+  margin: 0 15px 15px 15px;
 }
 .avatar {
   border-radius: 50%;
